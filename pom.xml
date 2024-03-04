@@ -8,6 +8,24 @@
     <artifactId>extentreports</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <name>ExtentReport-Warning</name>
+    <description>This is Extent report warning</description>
+    <url>https://github.com/happyusha/Extent-warning</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/happyusha/Extent-warning.git</connection>
+        <developerConnection>scm:git:ssh://github.com:happyusha/Extent-warning.git</developerConnection>
+        <url>https://github.com/happyusha/Extent-warning</url>
+    </scm>
+
+
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -107,6 +125,18 @@
                     </execution>
                 </executions>
             </plugin>
+
+        <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.7</version>
+            <extensions>true</extensions>
+            <configuration>
+                <serverId>ossrh</serverId>
+                <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            </configuration>
+        </plugin>
 
         </plugins>
     </build>
