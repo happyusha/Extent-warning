@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <groupId>io.github.happyusha</groupId>
+    <artifactId>extentreports-warning</artifactId>
+    <version>1.0.0</version>
 
     <name>ExtentReport-Warning</name>
     <description>This is Extent report warning</description>
@@ -213,6 +213,16 @@
                     </execution>
                 </executions>
             </plugin>
+                <plugin>
+                    <groupId>org.sonatype.central</groupId>
+                    <artifactId>central-publishing-maven-plugin</artifactId>
+                    <version>0.4.0</version>
+                    <extensions>true</extensions>
+                    <configuration>
+                        <publishingServerId>central</publishingServerId>
+                        <tokenAuth>true</tokenAuth>
+                    </configuration>
+                </plugin>
         </plugins>
     </build>
 
