@@ -6,7 +6,7 @@
 
     <groupId>io.github.happyusha</groupId>
     <artifactId>extentreports-warning</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.9-SNAPSHOT</version>
 
     <name>ExtentReport-Warning</name>
     <description>This is Extent report warning</description>
@@ -159,6 +159,10 @@
             <id>ossrh</id>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
     </distributionManagement>
     <build>
         <plugins>
