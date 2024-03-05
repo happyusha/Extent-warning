@@ -156,7 +156,7 @@
               <td>${author.passed}</td>
               <td>${author.failed}</td>
               <td>${author.skipped}</td>
-              <td>${author.warning}</td>
+              <td>${author.others}</td>
               <td><#if author.size()!=0>${(author.passed/author.size())*100}%<#else>0%</#if></td>
             </tr>
             </#list>
@@ -177,7 +177,7 @@
               <td>${category.passed}</td>
               <td>${category.failed}</td>
               <td>${category.skipped}</td>
-              <td>${category.warning}</td>
+              <td>${category.others}</td>
               <td><#if category.size()!=0>${(category.passed/category.size())*100}%<#else>0%</#if></td>
             </tr>
             </#list>
@@ -199,7 +199,7 @@
               <td>${device.passed}</td>
               <td>${device.failed}</td>
               <td>${device.skipped}</td>
-              <td>${device.warning}</td>
+              <td>${device.others}</td>
               <td><#if device.size()!=0>${(device.passed/device.size())*100}%<#else>0%</#if></td>
             </tr>
             </#list>
